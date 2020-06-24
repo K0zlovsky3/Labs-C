@@ -4,33 +4,32 @@
 
 using namespace std;
 int main() {
-	setlocale(LC_ALL, "Russian");
 	double a, b;
-	cout << "Найти значение выражения - (a + b)^2 - (a^2 + 2ab)" << endl;
+	cout << "Find the value of an expression - (a + b)^2 - (a^2 + 2ab)" << endl;
 	cout << "			   ______________________" << endl;
 	cout << "				    b^2			" << endl;
 	cout << endl;
-	cout << "Преобразуем по формуле квадрата суммы (a + b)^2, получаем - a^2 + 2ab + b^2" << endl;
+	cout << "We transform by the formula of the square of the sum (a + b)^2, we get - a^2 + 2ab + b^2" << endl;
 	cout << endl;
-	cout << "Переносим минус в левую часть выражения, в числителе получаем - -а^2 + 2ab + b^2 + a^2 + 2ab" << endl;
-	cout << "Сокращаем подобные, в числителе получаем b^2" << endl;
+	cout << "We transfer the minus to the left side of the expression, in the numerator we get - -a^2 + 2ab + b^2 + a^2 + 2ab" << endl;
+	cout << "Reduce the like, in the numerator we get b^2" << endl;
 	cout << endl;
-	cout << "Подставляем переменные в выражение - b^2" << endl;
+	cout << "Substitute variables into the expression - b^2" << endl;
 	cout << "				     ___" << endl;
 	cout << "				     b^2" << endl;
 	cout << endl;
-	cout << "Введите переменные a и b" << endl;
+	cout << "Enter variables a and b" << endl;
 	cin >> a;
-	cout << "а = " << a << endl;
+	cout << "Г  = " << a << endl;
 	cin >> b;
 	cout << "b = " << b << endl;
 	cout << endl;
-	cout << "Ответ: " << pow(b, 2) / pow(b, 2) << endl;
-	//c = pow(b, 2); // Знаменатель
+	cout << "Answer: " << pow(b, 2) / pow(b, 2) << endl;
+	//c = pow(b, 2); // Denominator
 	//d = -(pow(a, 2) + 2 * a*b); 
-	//e = pow(a + b, 2); // Квадрат суммы
-	//f = pow(e, 2); // Квадрат суммы
-	//g = pow(a, 2) + 2 * a*b + pow(b, 2); // Квадрат суммы
+	//e = pow(a + b, 2); // Squared amount
+	//f = pow(e, 2); // Squared amount
+	//g = pow(a, 2) + 2 * a*b + pow(b, 2); // Squared amount
 	//h = e = g;
 	return 0;
 }
