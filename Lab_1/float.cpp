@@ -24,7 +24,7 @@ int main() {
 	cin >> b;
 	cout << "b = " << b << endl;
 	cout << endl;
-	cout << "Îòâåò: " << pow(b, 2) / pow(b, 2) << endl;
+	cout << "Answer: " << pow(b, 2) / pow(b, 2) << endl;
 	//c = pow(b, 2); // Denominator
 	//d = -(pow(a, 2) + 2 * a*b); 
 	//e = pow(a + b, 2); // Squared amount
