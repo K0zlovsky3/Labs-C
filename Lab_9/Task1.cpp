@@ -18,7 +18,7 @@ int main()
     for (int i = 0; i < 10; i++)
     {
         fflush(stdin);
-        printf("введите строку %d : \n", i + 1);
+        printf("enter the string %d : \n", i + 1);
         gets_s(str);
         fputs(str, F1);
         fputs("\n", F1);
