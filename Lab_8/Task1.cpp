@@ -22,16 +22,16 @@ int main()
     setlocale(LC_ALL, "RUS");
     int n;
     f = fopen("f.txt", "wb");
-    cout << "Введите данные абитуриента";
+    cout << "Enter the data of the applicant";
     fwrite(&n, sizeof(n), 1, f);
 
-    cout << "\n Имя, Фамилия: "; cin >> st.fio;
+    cout << "\n First Name Last Name: "; cin >> st.fio;
     cout << endl;
-    cout << "\n Год рождения: "; (cin >> st.b_year).get();   //28
+    cout << "\n Year of birth: "; (cin >> st.b_year).get();   //28
     cout << endl;
-    cout << "\n Оценка экзамена: "; cin >> st.ocenki;
+    cout << "\n Exam score: "; cin >> st.ocenki;
     cout << endl;
-    cout << "\n Средний бал: "; cin >> st.sr_bal;
+    cout << "\n Average grade: "; cin >> st.sr_bal;
     cout << endl;
 
     fwrite(&st, sizeof(st), 1, f);
@@ -40,10 +40,10 @@ int main()
     f = fopen("f.txt", "rb");
 
     fread(&n, sizeof(n), 1, f);   //40
-    cout << "\n Имя, Фамилия: " << st.fio;
-    cout << "\n Год рождения: " << st.b_year;
-    cout << endl << "\n Оценка экзамена: " << st.ocenki;
-    cout << "\n Средний бал: " << st.sr_bal << endl;
+    cout << "\n First Name Last Name: " << st.fio;
+    cout << "\n Year of birth: " << st.b_year;
+    cout << endl << "\n Exam score: " << st.ocenki;
+    cout << "\n Average grade: " << st.sr_bal << endl;
     fclose(f);
 
     _getch();
